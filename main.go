@@ -1,11 +1,11 @@
 package main
 
 import (
-	"GoHollowPacker/runpe"
 	"crypto/aes"
 	"crypto/cipher"
 	_ "embed"
 	"encoding/hex"
+	"github.com/Enelg52/GoHollowPacker/runpe"
 )
 
 //https://pkg.go.dev/embed

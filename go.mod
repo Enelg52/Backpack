@@ -1,4 +1,4 @@
-module GoHollowPacker
+module github.com/Enelg52/GoHollowPacker
 
 go 1.17
 

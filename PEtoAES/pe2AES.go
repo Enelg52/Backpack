@@ -1,13 +1,13 @@
 package main
 
 import (
-	"GoHollowPacker/runpe"
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
 	"encoding/hex"
 	"flag"
 	"fmt"
+	"github.com/Enelg52/GoHollowPacker/runpe"
 	"io"
 	"io/ioutil"
 	"os"
